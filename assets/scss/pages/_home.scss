@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  .eatwellNav {
+    display: flex;
+    align-items: center;
+    min-height: 60px;
+    width: 100%;
+    background: transparent;
+    margin: auto;
+    .logoTxt {
+      color: white;
+      font-size: 30px;
+      font-weight: 400;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    }
+    .collapseDiv {
+      justify-content: flex-end;
+      ul {
+        gap: 20px;
+        font-weight: 350;
+        font-size: 14px;
+        .nav-link {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+#welcome {
+  min-height: 650px;
+  background-image: url("/assets/img/bg_3.jpg");
+  text-align: center;
+  display: flex;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .welcomeTxt {
+    color: white;
+    h1 {
+      font-size: 70px;
+      font-weight: 800;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    h4 {
+      font-weight: 300;
+    }
+    button {
+      width: 170px;
+      height: 60px;
+      background: transparent;
+      border-color: white;
+      color: white;
+      font-weight: 500;
+      &:hover {
+        background-color: white;
+        color: #000;
+      }
+    }
+  }
+
+
+@media (max-width: 600px) {
+  .welcomeTxt {
+    h1{
+      font-size: 40px;
+    }
+    h4{
+      font-size: 20px;
+    }
+  }
+}
+}
+
+#ourstory {
+  width: 100%;
+  margin-top: 10%;
+  .col-lg-6 {
+    img {
+      width: 100%;
+    }
+    p {
+      font-size: 17px;
+      color: #c8c8c8;
+    }
+    h1 {
+      font-size: 60px;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      color: #000;
+    }
+    button {
+      width: 250px;
+      height: 60px;
+      border-color: #c8c8c8;
+      color: #c8c8c8;
+      background: transparent;
+      font-weight: 500;
+      &:hover {
+        background-color: #fda403;
+        border-color: #fda403;
+        color: white;
+      }
+    }
+  }
+  @media (max-width: 600px) {
+     button{
+      margin: 10px;
+     }
+    }
+  }
+
+
+#thisSummer {
+  width: 100%;
+  margin-top: 10%;
+  background-color: #f8f9fa;
+  min-height: 650px;
+  display: flex;
+  justify-content: center;
+  .summerTxt {
+    margin-top: 10%;
+    text-align: center;
+    h6 {
+      color: #bfb5bd;
+      font-weight: 350;
+      font-size: 20px;
+    }
+    h1 {
+      font-size: 50px;
+      font-weight: 500;
+      font-family: Georgia, "Times New Roman", Times, serif;
+    }
+  }
+
+  .col-12 {
+    width: 400px;
+    display: flex;
+
+    button {
+      width: 130px;
+      height: 50px;
+      background-color: #fda403;
+      color: white;
+      border: none;
+      &:hover {
+        background-color: #cb8402;
+        color: white;
+        border: none;
+      }
+    }
+  }
+
+  #product {
+    margin: 3%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    font-weight: 600;
+    color: rgb(157, 157, 157);
+    flex-wrap: wrap;
+    .boxs {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+    .divz {
+      width: 100%;
+
+      button {
+        width: 100px;
+        height: 50px;
+        background-color: #fda403;
+        color: white;
+        border: none;
+        margin-bottom: 10px;
+        &:hover {
+          background-color: #cb8402;
+          color: white;
+        }
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+      .divc {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  #load {
+    width: 130px;
+    height: 50px;
+    background-color: #fda403;
+    color: white;
+    border: none;
+    &:hover {
+      background-color: #cb8402;
+      color: white;
+    }
+    margin: 3%;
+  }
+ 
+
+}
+
+#news {
+  width: 100%;
+  margin-top: 10%;
+  min-height: 650px;
+  display: flex;
+  justify-content: center;
+  .newsTxt {
+    margin-top: 10%;
+    text-align: center;
+    h6 {
+      color: #bfb5bd;
+      font-weight: 350;
+      font-size: 20px;
+    }
+    h1 {
+      font-size: 50px;
+      font-weight: 500;
+      font-family: Georgia, "Times New Roman", Times, serif;
+    }
+  }
+  .newsCard {
+    margin-top: 6%;
+    text-align: center;
+    margin-bottom: 6%;
+    .col-lg-4 {
+      gap: 20px;
+      img {
+        width: 100%;
+      }
+      h1 {
+        color: #000;
+        font-size: 20px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      p {
+        color: #c8c8c8;
+        font-size: 16px;
+      }
+      button {
+        width: 100px;
+        height: 40px;
+        border: none;
+        background-color: #fda403;
+        font-size: 14px;
+        color: white;
+        &:hover {
+          background-color: #cb8402;
+        }
+      }
+    }
+  }
+  @media (max-width:600px) {
+    button{
+     margin: 10px;
+    }
+   }
+}
+
+#getInTouch {
+  width: 100%;
+  margin-top: 10%;
+  background-color: #f8f9fa;
+  min-height: 650px;
+  display: flex;
+  justify-content: center;
+  .getTxt {
+    margin-top: 10%;
+    text-align: center;
+    margin-bottom: 5%;
+    h6 {
+      color: #bfb5bd;
+      font-weight: 350;
+      font-size: 20px;
+    }
+    h1 {
+      font-size: 50px;
+      font-weight: 500;
+      font-family: Georgia, "Times New Roman", Times, serif;
+    }
+  }
+  .col-lg-7 {
+    margin-bottom: 10%;
+    #form1 {
+      .form-group {
+        input {
+          border: none;
+          background-color: #e6e6e6;
+        }
+        textarea {
+          border: none;
+          background-color: #e6e6e6;
+        }
+      }
+      button {
+        width: 160px;
+        height: 40px;
+        border: none;
+        background-color: #fda403;
+        font-size: 14px;
+        color: white;
+        &:hover {
+          background-color: #cb8402;
+        }
+      }
+    }
+  }
+  .col-lg-5 {
+    margin-bottom: 10%;
+
+    img {
+      width: 100%;
+    }
+    h4 {
+      font-size: 20px;
+      font-weight: 300;
+    }
+  }
+}
+
+footer {
+  margin-top: 10%;
+  color: black;
+  text-align: center;
+  width: 100%;
+  min-height: 150px;
+  padding-top: 20px;
+}
+
+//BASKET  wishlist//
+
+#productz {
+  margin-top: 3%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  height: auto;
+  font-weight: 600;
+  color: rgb(157, 157, 157);
+  flex-wrap: wrap;
+
+  .divz {
+    img {
+      width: 100%;
+    }
+    .divc {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    button {
+      width: 130px;
+      height: 50px;
+      background-color: #fda403;
+      color: white;
+      border: none;
+      &:hover {
+        background-color: #cb8402;
+        color: black;
+      }
+      margin: 3%;
+    }
+  }
+}
+
+@media (max-width: 772px) {
+  #disp {
+    display: none;
+  }
+  header .sellingNav {
+    display: none;
+  }
+  #ourProducts .col-12 {
+    flex-wrap: wrap;
+  }
+}

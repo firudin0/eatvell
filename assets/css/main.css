@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+header .eatwellNav {
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+  width: 100%;
+  background: transparent;
+  margin: auto;
+}
+header .eatwellNav .logoTxt {
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+header .eatwellNav .collapseDiv {
+  justify-content: flex-end;
+}
+header .eatwellNav .collapseDiv ul {
+  gap: 20px;
+  font-weight: 350;
+  font-size: 14px;
+}
+header .eatwellNav .collapseDiv ul .nav-link {
+  color: white;
+}
+
+#welcome {
+  min-height: 650px;
+  background-image: url("/assets/img/bg_3.jpg");
+  text-align: center;
+  display: flex;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#welcome .welcomeTxt {
+  color: white;
+}
+#welcome .welcomeTxt h1 {
+  font-size: 70px;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#welcome .welcomeTxt h4 {
+  font-weight: 300;
+}
+#welcome .welcomeTxt button {
+  width: 170px;
+  height: 60px;
+  background: transparent;
+  border-color: white;
+  color: white;
+  font-weight: 500;
+}
+#welcome .welcomeTxt button:hover {
+  background-color: white;
+  color: #000;
+}
+@media (max-width: 600px) {
+  #welcome .welcomeTxt h1 {
+    font-size: 40px;
+  }
+  #welcome .welcomeTxt h4 {
+    font-size: 20px;
+  }
+}
+
+#ourstory {
+  width: 100%;
+  margin-top: 10%;
+}
+#ourstory .col-lg-6 img {
+  width: 100%;
+}
+#ourstory .col-lg-6 p {
+  font-size: 17px;
+  color: #c8c8c8;
+}
+#ourstory .col-lg-6 h1 {
+  font-size: 60px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #000;
+}
+#ourstory .col-lg-6 button {
+  width: 250px;
+  height: 60px;
+  border-color: #c8c8c8;
+  color: #c8c8c8;
+  background: transparent;
+  font-weight: 500;
+}
+#ourstory .col-lg-6 button:hover {
+  background-color: #fda403;
+  border-color: #fda403;
+  color: white;
+}
+@media (max-width: 600px) {
+  #ourstory button {
+    margin: 10px;
+  }
+}
+
+#thisSummer {
+  width: 100%;
+  margin-top: 10%;
+  background-color: #f8f9fa;
+  min-height: 650px;
+  display: flex;
+  justify-content: center;
+}
+#thisSummer .summerTxt {
+  margin-top: 10%;
+  text-align: center;
+}
+#thisSummer .summerTxt h6 {
+  color: #bfb5bd;
+  font-weight: 350;
+  font-size: 20px;
+}
+#thisSummer .summerTxt h1 {
+  font-size: 50px;
+  font-weight: 500;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#thisSummer .col-12 {
+  width: 400px;
+  display: flex;
+}
+#thisSummer .col-12 button {
+  width: 130px;
+  height: 50px;
+  background-color: #fda403;
+  color: white;
+  border: none;
+}
+#thisSummer .col-12 button:hover {
+  background-color: #cb8402;
+  color: white;
+  border: none;
+}
+#thisSummer #product {
+  margin: 3%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  font-weight: 600;
+  color: rgb(157, 157, 157);
+  flex-wrap: wrap;
+}
+#thisSummer #product .boxs {
+  width: 100%;
+  flex-wrap: wrap;
+}
+#thisSummer #product .divz {
+  width: 100%;
+}
+#thisSummer #product .divz button {
+  width: 100px;
+  height: 50px;
+  background-color: #fda403;
+  color: white;
+  border: none;
+  margin-bottom: 10px;
+}
+#thisSummer #product .divz button:hover {
+  background-color: #cb8402;
+  color: white;
+}
+#thisSummer #product .divz img {
+  width: 100%;
+  height: auto;
+}
+#thisSummer #product .divz .divc {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#thisSummer #load {
+  width: 130px;
+  height: 50px;
+  background-color: #fda403;
+  color: white;
+  border: none;
+  margin: 3%;
+}
+#thisSummer #load:hover {
+  background-color: #cb8402;
+  color: white;
+}
+
+#news {
+  width: 100%;
+  margin-top: 10%;
+  min-height: 650px;
+  display: flex;
+  justify-content: center;
+}
+#news .newsTxt {
+  margin-top: 10%;
+  text-align: center;
+}
+#news .newsTxt h6 {
+  color: #bfb5bd;
+  font-weight: 350;
+  font-size: 20px;
+}
+#news .newsTxt h1 {
+  font-size: 50px;
+  font-weight: 500;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#news .newsCard {
+  margin-top: 6%;
+  text-align: center;
+  margin-bottom: 6%;
+}
+#news .newsCard .col-lg-4 {
+  gap: 20px;
+}
+#news .newsCard .col-lg-4 img {
+  width: 100%;
+}
+#news .newsCard .col-lg-4 h1 {
+  color: #000;
+  font-size: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+#news .newsCard .col-lg-4 p {
+  color: #c8c8c8;
+  font-size: 16px;
+}
+#news .newsCard .col-lg-4 button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  background-color: #fda403;
+  font-size: 14px;
+  color: white;
+}
+#news .newsCard .col-lg-4 button:hover {
+  background-color: #cb8402;
+}
+@media (max-width: 600px) {
+  #news button {
+    margin: 10px;
+  }
+}
+
+#getInTouch {
+  width: 100%;
+  margin-top: 10%;
+  background-color: #f8f9fa;
+  min-height: 650px;
+  display: flex;
+  justify-content: center;
+}
+#getInTouch .getTxt {
+  margin-top: 10%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+#getInTouch .getTxt h6 {
+  color: #bfb5bd;
+  font-weight: 350;
+  font-size: 20px;
+}
+#getInTouch .getTxt h1 {
+  font-size: 50px;
+  font-weight: 500;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#getInTouch .col-lg-7 {
+  margin-bottom: 10%;
+}
+#getInTouch .col-lg-7 #form1 .form-group input {
+  border: none;
+  background-color: #e6e6e6;
+}
+#getInTouch .col-lg-7 #form1 .form-group textarea {
+  border: none;
+  background-color: #e6e6e6;
+}
+#getInTouch .col-lg-7 #form1 button {
+  width: 160px;
+  height: 40px;
+  border: none;
+  background-color: #fda403;
+  font-size: 14px;
+  color: white;
+}
+#getInTouch .col-lg-7 #form1 button:hover {
+  background-color: #cb8402;
+}
+#getInTouch .col-lg-5 {
+  margin-bottom: 10%;
+}
+#getInTouch .col-lg-5 img {
+  width: 100%;
+}
+#getInTouch .col-lg-5 h4 {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+footer {
+  margin-top: 10%;
+  color: black;
+  text-align: center;
+  width: 100%;
+  min-height: 150px;
+  padding-top: 20px;
+}
+
+#productz {
+  margin-top: 3%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  height: auto;
+  font-weight: 600;
+  color: rgb(157, 157, 157);
+  flex-wrap: wrap;
+}
+#productz .divz img {
+  width: 100%;
+}
+#productz .divz .divc {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#productz .divz button {
+  width: 130px;
+  height: 50px;
+  background-color: #fda403;
+  color: white;
+  border: none;
+  margin: 3%;
+}
+#productz .divz button:hover {
+  background-color: #cb8402;
+  color: black;
+}
+
+@media (max-width: 772px) {
+  #disp {
+    display: none;
+  }
+  header .sellingNav {
+    display: none;
+  }
+  #ourProducts .col-12 {
+    flex-wrap: wrap;
+  }
+}
